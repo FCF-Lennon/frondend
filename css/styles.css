@@ -1,5 +1,6 @@
 html {
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 *{
@@ -66,3 +67,31 @@ header {
     max-width: 100%;
     margin-bottom: 0.2rem;
 }
+
+/* footer */
+
+.ctn-footer {
+    max-width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: right;
+}
+
+.ctn-form{
+    max-width: 20vw;
+    margin: 2rem 0;
+    border: 1px solid #a8a8a0;
+    padding: 1rem;
+    color: #575752;
+    background-color: #c2c2bb;
+}
+
+.ctn-form h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.ctn-form button {
+    max-width: 5vw;
+}
+
