@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="normalize.css">
+        <title>Blog FlexBox</title>
+    </head>
+    <body>
+        <header>
+            <div class="ctn-menu">
+                <div class="ctn-titulo">
+                    <p>FLEXBOX</p>
+                </div>
+                <div class="ctn-nav">
+                    <nav class="nav1">
+                        <ul>
+                            <li class="ultimo"><a href="#">Conceptos Basicos y Terminologia</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="nav2">
+                        <ul>
+                            <li><a href="#">Display</a></li>
+                            <li><a href="#">Direction</a></li>
+                            <li><a href="#">Justify</a></li>
+                            <li class="ultimo"><a href="#">Align</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            <div>
+
+                <h1>Conceptos Basicos y Terminologia</h1>
+
+                <article>
+                    <p>Dado que flexbox es un módulo completo y no una sola propiedad,
+                    implica muchas cosas, incluido su conjunto completo de propiedades. 
+                    Algunos de ellos están destinados a establecerse en el contenedor 
+                    (elemento principal, conocido como "Container Flex o Contenedor 
+                    Flexible (Parents o Padres)"), mientras que otros están destinados 
+                    a establecerse en los elementos secundarios ("Items Flex o elementos 
+                    flexibles (Hijos o Children) ).</p>
+
+                    <p>Si el diseño "regular" se basa en direcciones de flujo en bloque 
+                    y en línea, el diseño flexible se basa en "Flex-Flow directions o 
+                    Direcciones de Flujo Flexible". Eche un vistazo a esta figura de la 
+                    especificación, que explica la idea principal detrás del diseño 
+                    flexible.</p>
+
+                    <img src="img/00-basic-terminology.svg" alt="contenedor flexible">
+
+                    <p>Los elementos se distribuirán siguiendo el eje main axis (desde 
+                    main-start a main-end) o el cross axis (desdes cross-start a 
+                    cross-end).</p>
+
+                    <ul>
+                        <li>
+                            <p><strong>Main Axis</strong>: El eje principal o main axis 
+                            de un contenedor flexible es el eje central a lo largo del 
+                            cual se disponen los elementos flexibles o items flex. 
+                            <strong>cuidado</strong>, no es necesariamente horizontal; 
+                            Depende de la propiedad flex-direction o direccion flexible 
+                            (<a href="#">ver más abajo</a>).</p>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+
+        </main>
+
+
+
+        </main>
+
+        <footer></footer>
+
+    </body>
+</html>
