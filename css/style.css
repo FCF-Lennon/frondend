@@ -1,0 +1,33 @@
+body {
+    background-color: antiquewhite;
+    width: 800px;
+    margin: 0 auto !important;
+    margin-top: 150px !important;
+}
+
+button {
+    margin-top: 10px;
+}
+
+p{
+    color: red;
+}
+
+.escondido{
+    display: none;
+}
+
+/* Regerenciamos por id */
+/* #id{
+
+} */
+
+/* Referenciamos por clase */
+/* .class{
+
+} */
+
+button:hover{
+    transform: scale(1.2);
+    background-color: rgb(94, 93, 93);
+}

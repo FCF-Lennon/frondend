@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="">Nombre</span>
+        <input type="text" id="name" class="form-control" placeholder="first name" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <div id="error_name" class="alert alert-danger escondido" role="alert"></div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="apellido">Apellido</span>
+        <input type="text" id="last_name" class="form-control" placeholder="last name" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <div id="error_last_name" class="alert alert-danger escondido" role="alert"></div>
+      
+
+      <div class="input-group mb-3">
+        <span class="input-group-text">Mensaje de contacto</span>
+        <textarea id="message" class="form-control" aria-label="With textarea" placeholder="mensaje de contacto"></textarea>
+      </div>
+      <div id="error_message" class="alert alert-danger escondido" role="alert"></div>
+      
+
+      <div class="input-group">
+        <button onclick="guardar()" type="button" class="btn btn-dark">Dark</button>
+      </div>
+</body>
+</html>
