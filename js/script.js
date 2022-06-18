@@ -7,12 +7,12 @@ let guardar = () => {
 
     // declaramos variables para los elementos del formulario segun el id
 
-    let firts_name = document.getElementById("name") // capturamos el dato almacenado en el input con id name (como el getter en python)
+    let firts_name = document.getElementById("name") // creamos la variable para referenciar en ella el elemento input con id name del documento html
     let last_name = document.getElementById("last_name")
     let message = document.getElementById("message")
 
-    // declaramos variables para los errores del formulario y los elementos que contienen los errores
-    let error_name = document.getElementById("error_name") // capturamos el dato almacenado en el div con id error_name (como el getter en python)
+    // declaramos variables para los errores del formulario
+    let error_name = document.getElementById("error_name") // creamos la variable para referenciar en ella el elemento div con id error_name del documento html
     let error_last_name = document.getElementById("error_last_name")
     let error_message = document.getElementById("error_message")
 
@@ -42,8 +42,20 @@ let guardar = () => {
         // fuera de la funcion guardar para que no se repita en cada llamada de la funcion guardar.
 
         mensajes.push(objeto) // agregamos el objeto al array mensajes que contiene los datos del formulario (como append en python)
-        console.log(mensajes) // imprimimos el array mensajes que contiene los datos del formulario
-    }
+        console.log(mensajes) // imprimimos el array mensajes que contiene los datos del formulario por consola
+
+        let elemento_response = document.getElementById("tablebody") // capturamos el dato almacenado en el div con id response (como el getter en python)
+        let row = "<tr><td>"+objeto.nombre+"</td><td>"+objeto.apellido+"</td><td>"+objeto.message+"</td></tr>" // creamos una variable para almacenar el html que contiene el objeto que contiene los datos del formulario
+        
+        var addRow = document.createElement("TR") // creamos una variable que referencia al elemento TR que se creara en el html
+        addRow.innerHTML = row // con innerHTML agregamos las filas al elemento TR del html en la tabla
+        elemento_response.appendChild(addRow) // agregamos el elemento TR al elemento response del html
+
+        firts_name.value = "" // limpiamos los campos del formulario
+        last_name.value = ""  // limpiamos los campos del formulario
+        message.value = "" // limpiamos los campos del formulario
+        
+    }   
 }
 
 
